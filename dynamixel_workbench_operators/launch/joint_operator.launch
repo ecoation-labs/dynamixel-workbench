@@ -1,8 +1,9 @@
 <launch>
   <arg name="namespace"               default="dynamixel_workbench"/>
   <arg name="is_loop"               default="false"/>
+  <arg name="path"                    default="/Dynamixel_ROS/motion_files/ecoation_servo_demo.yaml"/>
 
-  <param name="$(arg namespace)/trajectory_info" value="$(find dynamixel_workbench_operators)/config/ecoation_motion_demo.yaml"/>
+  <param name="$(arg namespace)/trajectory_info" value="$(arg path)"/>
 
   <node name="joint_operator" pkg="dynamixel_workbench_operators" type="joint_operator"
         required="true" output="screen" ns="$(arg namespace)">
