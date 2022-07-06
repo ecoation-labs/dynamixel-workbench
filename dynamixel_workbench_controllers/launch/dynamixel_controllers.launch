@@ -7,7 +7,7 @@
   <arg name="use_joint_state"         default="true"/>
   <arg name="use_cmd_vel"             default="false"/>
 
-  <arg name="path"                    default="/Dynamixel_ROS/config/ecoation_servo_demo.yaml"/>
+  <arg name="path"                    default="$(find dynamixel_as_adapter)/config/ecoation_servo_demo.yaml"/>
 
   <param name="dynamixel_info"          value="$(arg path)"/>
 

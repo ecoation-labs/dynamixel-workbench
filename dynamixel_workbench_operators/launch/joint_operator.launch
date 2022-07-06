@@ -1,7 +1,7 @@
 <launch>
   <arg name="namespace"               default="dynamixel_workbench"/>
   <arg name="is_loop"               default="false"/>
-  <arg name="path"                    default="/Dynamixel_ROS/motion_files/ecoation_motion_demo.yaml"/>
+  <arg name="path"                    default="$(find dynamixel_as_adapter)/motion/ecoation_motion_demo.yaml"/>
 
   <param name="$(arg namespace)/trajectory_info" value="$(arg path)"/>
 
